@@ -4,7 +4,7 @@ import io.github.aikusonitradesystem.core.common.BaseErrorCode;
 import lombok.Getter;
 
 @Getter
-public class ATSException extends Exception {
+public class ATSException extends Exception implements BaseAtsException {
     private final BaseErrorCode errorCode;
     private final String errorAlias;
 
