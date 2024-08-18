@@ -8,7 +8,7 @@ plugins {
 }
 
 group = 'io.github.aikusonitradesystem'
-version = '0.0.2-SNAPSHOT'
+version = System.getenv("GITHUB_REF")?.replace("refs/tags/", "") ?: "0.0.1-SNAPSHOT"
 
 java {
     toolchain {
