@@ -5,7 +5,9 @@ on:
     types: [published]
 
 jobs:
-  build:
+  build-and-publish:
+    displayName: Build and Publish
+    description: Build and publish the JAR file to GitHub Packages
 
     runs-on: ubuntu-latest
     permissions:
