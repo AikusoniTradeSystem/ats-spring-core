@@ -29,6 +29,7 @@ repositories {
     }
 }
 
+// GitHub에서 Publish시 GitHubAction으로 자동 수행됨
 publishing {
     publications {
         mavenJava(MavenPublication) {
@@ -39,7 +40,7 @@ publishing {
         maven {
             // packages 레포에 배포
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/AikusoniTradeSystem/packages")
+            url = uri("https://maven.pkg.github.com/AikusoniTradeSystem/ats-spring-core")
             credentials {
                 // gpr.user: github 사용자명
                 // gpr.token: github Personal access token
