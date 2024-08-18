@@ -32,6 +32,7 @@ jobs:
         env:
           GITHUB_USERNAME: ${{ github.actor }}
           GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REF: ${{ github.ref }}
 
       - name: List build/libs contents
         run: ls -la build/libs/
@@ -41,3 +42,4 @@ jobs:
         env:
           GITHUB_USERNAME: ${{ github.actor }}
           GITHUB_TOKEN: ${{ github.token }}
+          GITHUB_REF: ${{ github.ref }}
