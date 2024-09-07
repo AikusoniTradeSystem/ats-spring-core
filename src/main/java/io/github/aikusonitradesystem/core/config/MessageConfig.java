@@ -37,6 +37,9 @@ public class MessageConfig {
         messageSource.setBasenames(baseNames.toArray(new String[0]));
         messageSource.setDefaultEncoding("UTF-8");
         messageSource.setCacheSeconds(3600); // 캐시 시간 설정
+
+        MessageUtils.setMessageSource(messageSource);
+
         return messageSource;
     }
 }
