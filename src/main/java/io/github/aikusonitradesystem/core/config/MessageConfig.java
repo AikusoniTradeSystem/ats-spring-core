@@ -23,8 +23,8 @@ public class MessageConfig {
         PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         List<String> baseNames = new ArrayList<>();
 
-        // 모든 클래스패스 경로에서 messages.properties 파일 탐색
-        Resource[] resources = resolver.getResources("classpath*:messages/messages*.properties");
+        // 모든 클래스패스 경로에서 core_messages.properties 파일 탐색
+        Resource[] resources = resolver.getResources("classpath*:messages/*messages*.properties");
 
         // 각 메시지 파일을 MessageSource에 등록할 basename으로 변환
         for (Resource resource : resources) {
