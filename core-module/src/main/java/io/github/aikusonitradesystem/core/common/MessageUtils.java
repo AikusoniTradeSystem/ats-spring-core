@@ -12,16 +12,16 @@ public class MessageUtils {
 
     static String m(String code) {
         Locale locale = LocaleContextHolder.getLocale();
-        return messageSource.getMessage(code, null, locale);
+        return messageSource.getMessage(code, null, code, locale);
     }
 
     static String m(String code, Object[] args) {
         Locale locale = LocaleContextHolder.getLocale();
-        return messageSource.getMessage(code, args, locale);
+        return messageSource.getMessage(code, args, code, locale);
     }
 
     static String m(String code, Object[] args, Locale locale) {
-        return messageSource.getMessage(code, args, locale);
+        return messageSource.getMessage(code, args, code, locale);
     }
 }
 

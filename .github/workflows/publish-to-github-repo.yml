@@ -38,7 +38,8 @@ jobs:
           gradle-version: 8.5
 
       - name: Build Jar with Gradle
-        run: ./gradlew clean jar --info --stacktrace
+        run: |
+          ./gradlew --info --stacktrace :core-module:clean :core-module:jar
         env:
           GITHUB_USERNAME: ${{ github.actor }}
           GITHUB_TOKEN: ${{ github.token }}
@@ -48,7 +49,8 @@ jobs:
         run: ls -la build/libs/
 
       - name: Publish to GitHub Packages
-        run: ./gradlew publish
+        run: |
+          ./gradlew --info --stacktrace :core-module:publish
         env:
           # Don't change the values below. (Uploading to a separate repository)
           GITHUB_USERNAME: ${{ secrets.PACKAGE_PUBLISH_USERNAME }}
