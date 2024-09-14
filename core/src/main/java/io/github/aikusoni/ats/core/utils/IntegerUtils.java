@@ -1,4 +1,4 @@
-package io.github.aikusonitradesystem.core.utils;
+package io.github.aikusoni.ats.core.utils;
 
 public class IntegerUtils {
 

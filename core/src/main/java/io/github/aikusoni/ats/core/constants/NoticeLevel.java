@@ -1,4 +1,4 @@
-package io.github.aikusonitradesystem.core.constants;
+package io.github.aikusoni.ats.core.constants;
 
 import lombok.experimental.UtilityClass;
 

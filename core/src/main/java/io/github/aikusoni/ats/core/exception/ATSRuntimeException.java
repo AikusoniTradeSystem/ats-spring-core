@@ -1,7 +1,7 @@
-package io.github.aikusonitradesystem.core.exception;
+package io.github.aikusoni.ats.core.exception;
 
-import io.github.aikusonitradesystem.core.common.BaseErrorCode;
-import io.github.aikusonitradesystem.core.common.MessageCode;
+import io.github.aikusoni.ats.core.common.BaseErrorCode;
+import io.github.aikusoni.ats.core.common.MessageCode;
 import lombok.Getter;
 
 @Getter

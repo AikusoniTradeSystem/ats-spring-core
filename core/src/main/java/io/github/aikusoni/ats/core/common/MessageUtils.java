@@ -1,4 +1,4 @@
-package io.github.aikusonitradesystem.core.common;
+package io.github.aikusoni.ats.core.common;
 
 import lombok.Setter;
 import org.springframework.context.MessageSource;

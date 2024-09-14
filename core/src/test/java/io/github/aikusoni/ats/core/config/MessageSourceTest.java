@@ -1,4 +1,4 @@
-package io.github.aikusonitradesystem.core.config;
+package io.github.aikusoni.ats.core.config;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
