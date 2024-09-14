@@ -1,6 +1,6 @@
-package io.github.aikusoni.ats.core.constants;
+package io.github.aikusoni.ats.spring.core.constants;
 
-import io.github.aikusoni.ats.core.common.BaseErrorCode;
+import io.github.aikusoni.ats.spring.core.common.BaseErrorCode;
 import lombok.Getter;
 
 @Getter

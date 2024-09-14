@@ -1,4 +1,4 @@
-package io.github.aikusoni.ats.core.constants;
+package io.github.aikusoni.ats.spring.core.constants;
 
 import lombok.experimental.UtilityClass;
 

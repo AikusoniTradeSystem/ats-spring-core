@@ -1,6 +1,6 @@
-package io.github.aikusoni.ats.core.constants;
+package io.github.aikusoni.ats.spring.core.constants;
 
-import io.github.aikusoni.ats.core.common.MessageCode;
+import io.github.aikusoni.ats.spring.core.common.MessageCode;
 
 /**
  * 메시지 정의

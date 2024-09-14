@@ -1,4 +1,4 @@
-package io.github.aikusoni.ats.core.common;
+package io.github.aikusoni.ats.spring.core.common;
 
 public interface BaseErrorCode {
     int getErrorCode();

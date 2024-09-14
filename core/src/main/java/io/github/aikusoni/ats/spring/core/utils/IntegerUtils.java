@@ -1,4 +1,4 @@
-package io.github.aikusoni.ats.core.utils;
+package io.github.aikusoni.ats.spring.core.utils;
 
 public class IntegerUtils {
 
