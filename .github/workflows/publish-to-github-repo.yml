@@ -39,18 +39,18 @@ jobs:
 
       - name: Build Jar with Gradle
         run: |
-          ./gradlew --info --stacktrace :core-module:clean :core-module:jar
+          ./gradlew --info --stacktrace :core:clean :core:jar
         env:
           GITHUB_USERNAME: ${{ github.actor }}
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_TAG: ${{ github.ref_name }}
 
-      - name: List core-module/build/libs contents
-        run: ls -la core-module/build/libs/
+      - name: List core/build/libs contents
+        run: ls -la core/build/libs/
 
       - name: Publish to GitHub Packages
         run: |
-          ./gradlew --info --stacktrace :core-module:publish
+          ./gradlew --info --stacktrace :core:publish
         env:
           # Don't change the values below. (Uploading to a separate repository)
           GITHUB_USERNAME: ${{ secrets.PACKAGE_PUBLISH_USERNAME }}
