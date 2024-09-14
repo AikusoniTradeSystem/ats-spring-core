@@ -1,1 +1,4 @@
 rootProject.name = 'ats-spring-core'
+include 'core-module'
+include 'message-code-validation-processor'
+
