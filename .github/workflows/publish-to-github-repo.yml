@@ -45,8 +45,8 @@ jobs:
           GITHUB_TOKEN: ${{ github.token }}
           GITHUB_TAG: ${{ github.ref_name }}
 
-      - name: List build/libs contents
-        run: ls -la build/libs/
+      - name: List core-module/build/libs contents
+        run: ls -la core-module/build/libs/
 
       - name: Publish to GitHub Packages
         run: |

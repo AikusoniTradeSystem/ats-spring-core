@@ -1,6 +1,7 @@
 package io.github.aikusonitradesystem.core.exception;
 
 import io.github.aikusonitradesystem.core.common.BaseErrorCode;
+import io.github.aikusonitradesystem.core.common.MessageCode;
 import lombok.Getter;
 
 @Getter
@@ -15,6 +16,17 @@ public class ATSException extends Exception implements BaseAtsException {
      */
     public ATSException(BaseErrorCode errorCode, String errorAlias, String message) {
         super(message);
+        this.errorCode = errorCode;
+        this.errorAlias = errorAlias;
+    }
+
+    /**
+     * @param errorCode 에러코드를 넣는다.
+     * @param errorAlias 에러 위치를 추적할 때 사용할만한 에러 별명을 넣는다.
+     * @param messageCode 에러 메시지 코드를 넣는다.
+     */
+    public ATSException(BaseErrorCode errorCode, String errorAlias, MessageCode messageCode) {
+        super(messageCode.getMessage());
         this.errorCode = errorCode;
         this.errorAlias = errorAlias;
     }
