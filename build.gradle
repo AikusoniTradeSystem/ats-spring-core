@@ -16,7 +16,7 @@ subprojects {
     apply plugin: 'java'
     apply plugin: 'maven-publish'
 
-    group = 'io.github.aikusonitradesystem'
+    group = 'io.github.aikusoni.ats.spring'
     version = System.getenv("GITHUB_TAG") ?: "0.0.1-SNAPSHOT"
 
     java {
