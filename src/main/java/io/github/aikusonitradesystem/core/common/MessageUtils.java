@@ -1,4 +1,4 @@
-package io.github.aikusonitradesystem.core.utils;
+package io.github.aikusonitradesystem.core.common;
 
 import lombok.Setter;
 import org.springframework.context.MessageSource;
@@ -10,17 +10,17 @@ public class MessageUtils {
     @Setter
     private static MessageSource messageSource;
 
-    public static String m(String code) {
+    static String m(String code) {
         Locale locale = LocaleContextHolder.getLocale();
         return messageSource.getMessage(code, null, locale);
     }
 
-    public static String m(String code, Object[] args) {
+    static String m(String code, Object[] args) {
         Locale locale = LocaleContextHolder.getLocale();
         return messageSource.getMessage(code, args, locale);
     }
 
-    public static String m(String code, Object[] args, Locale locale) {
+    static String m(String code, Object[] args, Locale locale) {
         return messageSource.getMessage(code, args, locale);
     }
 }

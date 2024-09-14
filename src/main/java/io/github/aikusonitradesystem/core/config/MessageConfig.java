@@ -1,6 +1,6 @@
 package io.github.aikusonitradesystem.core.config;
 
-import io.github.aikusonitradesystem.core.utils.MessageUtils;
+import io.github.aikusonitradesystem.core.common.MessageUtils;
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
