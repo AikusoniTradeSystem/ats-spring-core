@@ -2,10 +2,7 @@ package io.github.aikusoni.ats.spring.core.utils;
 
 import lombok.experimental.UtilityClass;
 
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.OffsetDateTime;
-import java.time.ZonedDateTime;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
 
 @UtilityClass
@@ -70,5 +67,9 @@ public class DateTimeUtils {
             return null;
         }
         return ZonedDateTime.parse(zonedDateTimeStr, ZONE_DATE_TIME_FORMATTER);
+    }
+
+    public static String formatUnixTimeStamp(long unixTimeStamp, ZoneId zoneId) {
+        return ZonedDateTime.ofInstant(java.time.Instant.ofEpochSecond(unixTimeStamp), zoneId).format(ZONE_DATE_TIME_FORMATTER);
     }
 }
